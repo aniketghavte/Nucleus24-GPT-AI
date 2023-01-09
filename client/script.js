@@ -6,6 +6,7 @@ const chatContainer = document.querySelector('#chat_container')
 
 let loadInterval
 
+
 function loader(element) {
     element.textContent = ''
 
@@ -86,7 +87,8 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('https://nucleus24-gpt.onrender.com/', {
+    const response = await fetch('https://nucleus24gpt.onrender.com/', {
+        mode: 'no-cors',
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
