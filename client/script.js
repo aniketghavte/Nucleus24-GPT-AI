@@ -88,10 +88,11 @@ const handleSubmit = async (e) => {
     loader(messageDiv)
 
     const response = await fetch('https://nucleus24gpt.onrender.com/', {
-        mode: 'no-cors',
+
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': 'https://nucleus24-gpt-ai.vercel.app/'
         },
         body: JSON.stringify({
             prompt: data.get('prompt')
