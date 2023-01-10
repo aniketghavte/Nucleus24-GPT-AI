@@ -14,7 +14,7 @@ body {
 #app {
   width: 100vw;
   height: 100vh;
-  background: #343541;
+  background: #303037;
 
   display: flex;
   flex-direction: column;
@@ -147,4 +147,14 @@ button {
 form img {
   width: 30px;
   height: 30px;
+}
+
+#Logo{
+  text-align: center;
+  font-size: 2rem;
+  color: #40414F; 
+
+}
+#Logo span{
+
 }
